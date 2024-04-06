@@ -22,3 +22,45 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# IntelliJ IDEA specific
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Maven
+target/
+
+# Gradle
+build/
+.gradle/
+
+# Spring Boot specific
+spring-boot-devtools/
+.springBeans
+
+# Docker specific
+**/Dockerfile.*
+**/.dockerignore
+docker-compose*.yml
+docker/
+*.docker.tar
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# Logs and databases
+*.sql
+*.sqlite
+/logs/
+/data/
+
+# Session Storage
+*.session
+SESSION.DAT
+
