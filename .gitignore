@@ -30,16 +30,11 @@ replay_pid*
 *.ipr
 out/
 
-# Maven
-target/
-
 # Gradle
-build/
 .gradle/
 
 # Spring Boot specific
 spring-boot-devtools/
-.springBeans
 
 # Docker specific
 **/Dockerfile.*
@@ -63,4 +58,36 @@ Thumbs.db
 # Session Storage
 *.session
 SESSION.DAT
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
 
