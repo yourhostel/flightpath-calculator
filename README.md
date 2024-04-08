@@ -46,7 +46,7 @@ $$
 \text{курс} = \text{atan2}\left(\sin(\Delta\lambda) \cdot \cos(\phi_2), \cos(\phi_1) \cdot \sin(\phi_2) - \sin(\phi_1) \cdot \cos(\phi_2) \cdot \cos(\Delta\lambda)\right)
 $$
 
-де \( \Delta\lambda \) - різниця довгот точок.
+де $\( \Delta\lambda \)$ - різниця довгот точок.
 
 Інтерполяція широти та довготи між двома точками виконується за формулами лінійної інтерполяції:
 
