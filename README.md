@@ -1,6 +1,4 @@
 # Завдання для java інженера з управління трафіком
-#### flightpath-calculator
-
 
 
 ```bash
@@ -33,7 +31,7 @@ docker run --name flightpath-mongo -p 27017:27017 -d mongo:latest
 public record WayPoint(
         double latitude, // Широта
         double longitude, // Довгота
-         double altitude, // Висота прольоту м
+        double altitude, // Висота прольоту м
         double speed // Швидкість прольоту м/с
 ) { }
 ```
