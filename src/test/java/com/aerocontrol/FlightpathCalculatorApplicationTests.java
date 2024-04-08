@@ -1,4 +1,4 @@
-package com.aerocontrol.flightpath;
+package com.aerocontrol;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
