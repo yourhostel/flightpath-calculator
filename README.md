@@ -1,17 +1,19 @@
-# flightpath-calculator
+# Завдання для java інженера з управління трафіком
+#### flightpath-calculator
+
 
 
 ```bash
 docker run --name flightpath-mongo -p 27017:27017 -d mongo:latest
 ```
 
-# Розрахунок Маршруту Літака
+# Розрахунок Маршруту літальних апаратів (ЛА)
 
-Сервіс `PlaneCalculationService` призначений для розрахунку маршрутів літаків з урахуванням різних льотних характеристик і контрольних точок. Використовуючи серію географічних точок, сервіс розраховує деталізований маршрут літака.
+Сервіс [PlaneCalculationService](https://github.com/yourhostel/flightpath-calculator/blob/main/src/main/java/com/aerocontrol/flightpath/service/PlaneCalculationService.java) призначений для розрахунку маршрутів ЛА з урахуванням різних льотних характеристик і контрольних точок. Використовуючи серію географічних точок, сервіс розраховує деталізований маршрут ЛА.
 
-## Характеристики Літака
+## Характеристики ЛА
 
-Літак описується наступними характеристиками:
+ЛА описується наступними характеристиками:
 - Максимальна швидкість (може бути використана)
 - Максимальне прискорення (використовується) 
 - Швидкість зміни висоти (не використовується в даному прикладі)
@@ -26,6 +28,7 @@ docker run --name flightpath-mongo -p 27017:27017 -d mongo:latest
 4. Від (0.07, 0.03, 70, 160) до (0.09, -0.04, 90, 50)
 5. Від (0.09, -0.04, 90, 50) до (0.1, 0, 0, 0)
 
+[WayPoint](https://github.com/yourhostel/flightpath-calculator/blob/main/src/main/java/com/aerocontrol/flightpath/domain/WayPoint.java) :
 ```java
 public record WayPoint(
         double latitude, // Широта
